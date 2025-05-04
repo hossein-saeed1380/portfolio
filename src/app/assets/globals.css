@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-main: oklch(26.8% 0.007 34.298);
+  --color-primary-dark: ;
+  --color-primary-light: ;
+  --color-secondary-main: oklch(85.2% 0.199 91.936);
+  --color-secondary-dark: ;
+  --color-secondary-light: ;
+  --color-background-default: oklch(14.7% 0.004 49.25);
+  --color-background-paper: oklch(21.6% 0.006 56.043);
+  --color-text: oklch(98.5% 0.001 106.423);
+  --color-divider: oklch(55.3% 0.013 58.071);
+  --font-onest: var(--font-onest);
+}
+
+@layer components {
+  .typography {
+    color: var(--color-gray-950);
+    a {
+      color: var(--color-blue-500);
+      &:hover {
+        color: var(--color-blue-800);
+      }
+    }
+  }
+}
+
+.link-underline-slider {
+  @apply hover:text-secondary-main after:bg-secondary-main relative cursor-pointer duration-200 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:transition-all after:duration-300 hover:after:w-full;
+}
+
+.link-bg-slider {
+  @apply text-text bg-background-default hover:text-secondary-main before:bg-primary-main after:border-divider relative z-10 flex h-12 cursor-pointer items-center justify-center overflow-hidden overflow-x-hidden px-8 py-2 duration-500 before:absolute before:left-0 before:z-0 before:aspect-square before:w-full before:origin-center before:-translate-x-full before:rounded-full before:transition-all before:duration-500 after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:z-10 after:border-2 hover:before:-translate-x-0 hover:before:scale-150 [&>span]:z-10;
+}
+
+.button-icon {
+  @apply bg-background-paper text-text hover:bg-primary-main hover:text-secondary-main focus:bg-primary-main focus:text-secondary-main active:bg-primary-main border-divider cursor-pointer rounded-md border-2 p-1.5 text-center text-sm shadow-sm transition-all hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+}

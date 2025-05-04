@@ -1,0 +1,38 @@
+{
+  "header": {
+    "logoTitle": "Hosein Saeed",
+    "Home": "Home",
+    "About": "About",
+    "Projects": "Projects",
+    "logo": "Hosein Saeed",
+    "Skills": "Skills"
+  },
+  "home": {
+    "title": "Hello, My Name Is Hosein Saeed.",
+    "description1": "I'm a Full-Stack Software Engineer I Make Fast and beautiful Websites That Feel Great To Use, I'm Currently Working as a Freelancer On Upwork.",
+    "projects": "Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hello, I'm a passionate software Engineer From France, dedicated to building robust, scalable, Fast, and user-friendly Websites. With a strong foundation in modern web technologies and a keen eye for detail, I enjoy turning complex problems into elegant code."
+  },
+  "skills": {
+    "title": "My Skills",
+    "HTML": "A Markup Language For Browsers Used To Build Ui Structures",
+    "CSS": "A Style Sheet For Styling HTML",
+    "Tailwind CSS": "A CSS Library It Makes Styling Faster And More scalable",
+    "MUI": "A ReactJs Component Library Good For Making beautiful Websites Fast",
+    "Javascript": "",
+    "Typescript": "Javascript With Types Makes Developer Much Exprience Better And ",
+    "ReactJs": "The Most Popular And Future Prove Javascript Library For Front-end",
+    "NextJs": "A Framework For ReactJs",
+    "NodeJs": "A Server Side Javascript Run-Time",
+    "ExpressJs": "A NodeJs Library For Making APIs",
+    "SQL": "SQL Databases",
+    "MongoDB": "Most Popular NoSql Database"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Take A Look At My Work."
+  }
+}
