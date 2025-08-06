@@ -17,6 +17,5 @@ jobs:
         with:
           host: 45.138.135.100
           username: root
-          port: 80
           password: 3p5Vs82cLD
           script: sudo docker stop nextjs-docker
