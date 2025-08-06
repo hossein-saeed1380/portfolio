@@ -21,6 +21,11 @@ jobs:
           script: |
             cd ..
             cd /var/www/portfolio
-            git clone https://github.com/saeed00014/portfolio-upwork.git
+            - name: Clone code
+            uses: git clone https://github.com/saeed00014/portfolio-upwork.git
+            with:
+              owner: 'saeed00014'
+              repository: 'portfolio-upwork'
+              access-token: ${{ secrets.ACCESS_TOKEN }}
             docker build -t nextjs-docker .
-            docker run -p 3000:3000 nextjs-docker
+            docker run -p 80:3000 nextjs-docker
