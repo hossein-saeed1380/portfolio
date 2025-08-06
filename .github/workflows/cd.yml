@@ -21,7 +21,7 @@ jobs:
           script: |
             cd ..
             cd /var/www/portfolio
-            rm portfolio-upwork
+            rm -rf portfolio-upwork
             pwd
             ls
             git clone https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/saeed00014/portfolio-upwork.git
