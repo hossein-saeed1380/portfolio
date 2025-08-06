@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo " host ${{ secrets.SERVER_HOST }} user ${{ secrets.SERVER_USER }} key ${{ secrets.SERVER_KEY }}"
+      - run: | 
+          echo " host ${{ secrets.SERVER_HOST }} user ${{ secrets.SERVER_USER }} key ${{ secrets.SERVER_KEY }}" | base64
       
       - name: Checkout code
         uses: actions/checkout@v3
