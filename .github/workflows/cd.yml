@@ -22,6 +22,6 @@ jobs:
             cd ..
             cd /var/www/portfolio
             pwd
-            git clone https://x-access-token:${{ secrets.ACCESS_TOKEN }}@git@github.com:saeed00014/portfolio-upwork.git
+            git clone https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com:saeed00014/portfolio-upwork.git
             docker build -t nextjs-docker .
             docker run -itd --rm -p 80:3000 --name portfolio nextjs-docker
