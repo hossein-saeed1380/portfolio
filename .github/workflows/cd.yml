@@ -21,6 +21,6 @@ jobs:
           script: |
             cd ..
             cd /var/www/portfolio
-            gh repo clone saeed00014/portfolio-upwork
+            git clone https://github.com/saeed00014/portfolio-upwork.git
             docker build -t nextjs-docker .
             docker run -p 3000:3000 nextjs-docker
