@@ -18,7 +18,7 @@ export default async function Header() {
   ];
 
   return (
-    <header className="border-divider sticky top-0 z-100 flex h-[60px] min-h-[50px] w-full items-center border-b-2 px-[5%] lg:px-[10%]">
+    <header className="border-divider sticky top-0 z-100 flex h-[60px] min-h-[50px] w-full items-center border-b px-[5%] lg:px-[10%]">
       <Link
         href={"#intro"}
         className="hover:text-secondary-main hover:bg-primary-main relative flex items-center justify-center duration-300"

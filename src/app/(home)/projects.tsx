@@ -44,7 +44,6 @@ export default async function Projects() {
               >
                 <div className="outline-divider relative h-[8rem] w-[16rem] rounded-sm border-2 border-transparent outline-2">
                   <Image src={project.image} alt="" fill className="w-full" />
-                  <div className="to-background-paper absolute inset-0 z-10 bg-linear-to-b from-transparent from-[0%] to-[100%]"></div>
                 </div>
                 <div className="flex flex-col">
                   <h3 className="text-2xl">sdfsdf sdf</h3>
